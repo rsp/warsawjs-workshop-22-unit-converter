@@ -1,7 +1,7 @@
 {
   "name": "warsawjs-workshop-22-unit-converter",
   "version": "0.0.0",
-  "description": "WarsawJS Workshop #22 - Unit Converter Project",
+  "description": "Unit Converter Project for WarsawJS Workshop 22 Group 1",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

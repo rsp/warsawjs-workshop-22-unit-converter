@@ -1,5 +1,7 @@
-WarsawJS Workshop #22 - Unit Converter Project
+Unit Converter
 =
+Project for WarsawJS Workshop 22 Group 1
+-
 
 1. Fork the project on GitHub:
 
@@ -24,4 +26,5 @@ npm i
 ```
 
 5. Go to the workshop
+
 6. Have fun!
