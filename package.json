@@ -4,9 +4,23 @@
   "description": "Unit Converter Project for WarsawJS Workshop 22 Group 1",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint backend/ lib/ && echo LINTING OK || (echo LINTING ERROR; false)",
+    "lint": "eslint backend/ converters/ && echo LINTING OK || (echo LINTING ERROR; false)",
+    "npmls": "npm ls 2>&1 && echo NPMLS OK || echo NPMLS ERROR",
+    "sysinfo": "uname -a && cat /proc/meminfo && df -h . && echo SYSINFO OK || echo SYSINFO ERROR",
+    "versions": "echo -n 'NODE ' && node -v && echo -n 'NPM ' && npm -v && node -e 'console.log(process.versions);' && echo VERSIONS OK || echo VERSIONS ERROR",
     "start": "node backend/server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "jest": "jest && echo JEST OK || (echo JEST ERROR; false)",
+    "jest-cover": "jest --coverage && echo JEST OK || (echo JEST ERROR; false)",
+    "tap": "tap tests/tap/*.test.js && echo TAP OK || (echo TAP ERROR; false)",
+    "tap-cover": "tap tests/tap/*.test.js --coverage && echo TAP OK || (echo TAP ERROR; false)",
+    "tape": "tape tests/tape/*.test.js && echo TAPE OK || (echo TAPE ERROR; false)",
+    "test": "npm run lint && npm run tape && npm run tap && npm run jest && echo NPM TEST OK || (echo NPM TEST ERROR; false)"
+  },
+  "jest": {
+    "testRegex": "\\.test\\.js$",
+    "roots": [
+      "tests/jest"
+    ]
   },
   "repository": {
     "type": "git",
