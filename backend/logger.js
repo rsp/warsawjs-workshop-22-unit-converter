@@ -3,15 +3,19 @@
 const split = require('split');
 const { createLogger, transports, format } = require('winston');
 
-const { combine, timestamp, label, printf } = format;
+const {
+  combine, timestamp, label, printf,
+} = format;
 
 const fmt = printf(info => `${info.timestamp} [${info.label}] ${info.level}: ${info.message}`);
 
 const logger = createLogger({
-  format: format.combine(
-    label({ label: 'UC' }),
-    format.timestamp(),
-    fmt
+  format: combine(
+    label({
+      label: 'UC',
+    }),
+    timestamp(),
+    fmt,
   ),
   transports: [
     new transports.Console({

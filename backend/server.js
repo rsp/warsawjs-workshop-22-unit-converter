@@ -4,10 +4,11 @@ const express = require('express');
 const { json } = require('body-parser');
 const { join } = require('path');
 const swagger = require('swagger-ui-express');
+const morgan = require('morgan');
+
 const doc = require('./swagger.json');
 
 const { logger } = require('./logger');
-const morgan = require('morgan');
 
 const { temperature } = require('../lib/temperature');
 const { currency } = require('../lib/currency');
