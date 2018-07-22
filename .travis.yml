@@ -1,0 +1,23 @@
+{
+  "language": "node_js",
+  "node_js": "10",
+  "services": [
+    "redis-server"
+  ],
+  "env": [
+  ],
+  "before_install": [
+    "npm run sysinfo",
+    "npm run versions",
+    "npm config set spin false"
+  ],
+  "install": [
+    "npm install",
+    "npm run npmls"
+  ],
+  "before_script": [
+  ],
+  "script": [
+    "npm run test"
+  ]
+}
