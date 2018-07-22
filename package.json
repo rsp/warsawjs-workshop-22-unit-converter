@@ -4,6 +4,7 @@
   "description": "Unit Converter Project for WarsawJS Workshop 22 Group 1",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint backend/ lib/ && echo LINTING OK || (echo LINTING ERROR; false)",
     "start": "node backend/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

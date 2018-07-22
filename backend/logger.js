@@ -1,3 +1,5 @@
+'use strict';
+
 const split = require('split');
 const logform = require('logform');
 const { combine, timestamp, label, printf } = logform.format;
