@@ -2,16 +2,17 @@
 
 const split = require('split');
 const logform = require('logform');
-const { combine, timestamp, label, printf } = logform.format;
+
+const {
+  combine, timestamp, label, printf,
+} = logform.format;
 const { createLogger, transports, format } = require('winston');
 
 const logger = createLogger({
   format: combine(
     label({ label: 'uc' }),
     timestamp(),
-    printf(nfo => {
-      return `${nfo.timestamp} [${nfo.label}] ${nfo.level}: ${nfo.message}`;
-    })
+    printf(nfo => `${nfo.timestamp} [${nfo.label}] ${nfo.level}: ${nfo.message}`),
   ),
   transports: [
     new transports.Console({
