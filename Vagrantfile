@@ -102,7 +102,7 @@ Vagrant.configure("2") do |config|
 
     echo Configuring PATH and PS1 in .profile
     echo -e "\n# ---\n# rsp nw1:" >> $h/.profile
-    curl -sS https://gist.githubusercontent.com/rsp/fd71cad1ba91fc1777ef0b12bb36c9dc/raw/b750e23e937a95ab47ca5ee2b31b9f38c58af798/rsp-ps1.sh >> $h/.profile
+    curl -sS https://gist.githubusercontent.com/rsp/fd71cad1ba91fc1777ef0b12bb36c9dc/raw/cdd652746f709c0173aba24581a5e0df55bf5274/rsp-ps1.sh >> $h/.profile
     echo 'export PATH="$HOME/opt/node/bin:$PATH"' >> $h/.profile
 
     echo Downloading tmux config
