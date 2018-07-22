@@ -1,18 +1,17 @@
 'use strict';
 
 const split = require('split');
-const logform = require('logform');
-
-const {
-  combine, timestamp, label, printf,
-} = logform.format;
 const { createLogger, transports, format } = require('winston');
 
+const { combine, timestamp, label, printf } = format;
+
+const fmt = printf(info => `${info.timestamp} [${info.label}] ${info.level}: ${info.message}`);
+
 const logger = createLogger({
-  format: combine(
-    label({ label: 'uc' }),
-    timestamp(),
-    printf(nfo => `${nfo.timestamp} [${nfo.label}] ${nfo.level}: ${nfo.message}`),
+  format: format.combine(
+    label({ label: 'UC' }),
+    format.timestamp(),
+    fmt
   ),
   transports: [
     new transports.Console({
