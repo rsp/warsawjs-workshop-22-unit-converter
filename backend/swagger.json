@@ -1,0 +1,188 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "0.0.0",
+    "title": "Unit Converter API",
+    "description": "Unit Converter Project for WarsawJS Workshop 22 Group 1",
+    "contact": {
+      "name": "Rafał Pocztarski",
+      "email": "r.pocztarski@gmail.com",
+      "url": "https://pocztarski.com/"
+    },
+    "license": {
+      "name": "MIT License",
+      "url": "https://opensource.org/licenses/MIT"
+    }
+  },
+  "host": "localhost:3333",
+  "basePath": "/api",
+  "schemes": [
+    "http"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/temperature": {
+      "get": {
+        "description": "Convert temperature units",
+        "operationId": "convertTemperature",
+        "tags": ["Temperature"],
+        "parameters": [
+          {
+            "name": "fromValue",
+            "in": "query",
+            "description": "The numerical value to convert from",
+            "required": true,
+            "type": "number"
+          },
+          {
+            "name": "fromUnit",
+            "in": "query",
+            "description": "The original units to convert from",
+            "required": true,
+            "type": "string",
+            "enum": ["C", "F", "K"]
+          },
+          {
+            "name": "toUnit",
+            "in": "query",
+            "description": "The target units to convert to",
+            "required": true,
+            "type": "string",
+            "enum": ["C", "F", "K"]
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Temperature conversion response",
+            "schema": {
+              "type": {
+                "$ref": "#/definitions/TemperatureResponse"
+              }
+            },
+            "examples": {
+              "application/json": "{\n  \"type\": \"temperature\",\n  \"fromValue\": \"100\",\n  \"fromUnit\": \"C\",\n  \"toUnit\": \"K\",\n  \"result\": 373.15\n}"
+            }
+          }
+        }
+      }
+    },
+    "/currency": {
+      "get": {
+        "description": "Convert currency units",
+        "operationId": "convertCurrency",
+        "tags": ["Currency"],
+        "parameters": [
+          {
+            "name": "fromValue",
+            "in": "query",
+            "description": "The numerical value to convert from",
+            "required": true,
+            "type": "number"
+          },
+          {
+            "name": "fromUnit",
+            "in": "query",
+            "description": "The original units to convert from",
+            "required": true,
+            "type": "string",
+            "enum": ["EUR", "PLN", "USD"]
+          },
+          {
+            "name": "toUnit",
+            "in": "query",
+            "description": "The target units to convert to",
+            "required": true,
+            "type": "string",
+            "enum": ["EUR", "PLN", "USD"]
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Currency conversion response",
+            "schema": {
+              "type": {
+                "$ref": "#/definitions/CurrencyResponse"
+              }
+            },
+            "examples": {
+              "application/json": "{\n  \"type\": \"currency\",\n  \"fromValue\": \"100\",\n  \"fromUnit\": \"USD\",\n  \"toUnit\": \"PLN\",\n  \"result\": 345.46000000000004\n}"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "TemperatureResponse": {
+      "type": "object",
+      "allOf": [
+        {
+          "required": [
+            "type",
+            "fromValue",
+            "fromUnit",
+            "toUnit"
+          ],
+          "properties": {
+            "type": {
+              "type": "string",
+              "enum": ["temperature"]
+            },
+            "fromValue": {
+              "type": "number"
+            },
+            "fromUnit": {
+              "type": "string",
+              "enum": ["C", "F", "K"]
+            },
+            "toUnit": {
+              "type": "string",
+              "enum": ["C", "F", "K"]
+            },
+            "result": {
+              "type": "number"
+            }
+          }
+        }
+      ]
+    },
+    "CurrencyResponse": {
+      "type": "object",
+      "allOf": [
+        {
+          "required": [
+            "type",
+            "fromValue",
+            "fromUnit",
+            "toUnit"
+          ],
+          "properties": {
+            "type": {
+              "type": "string",
+              "enum": ["currency"]
+            },
+            "fromValue": {
+              "type": "number"
+            },
+            "fromUnit": {
+              "type": "string",
+              "enum": ["EUR", "PLN", "USD"]
+            },
+            "toUnit": {
+              "type": "string",
+              "enum": ["EUR", "PLN", "USD"]
+            },
+            "result": {
+              "type": "number"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,11 @@
+machine:
+  node:
+    version: 10
+  services:
+    - redis
+general:
+  artifacts:
+    - "server.log"
+test:
+  post:
+    - npm run npmls > $CIRCLE_ARTIFACTS/npmls.txt

@@ -24,3 +24,4 @@ lib/docs/build/
 app.env
 package-lock.json
 dist/
+.vagrant/

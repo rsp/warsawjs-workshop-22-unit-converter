@@ -2,6 +2,8 @@ Unit Converter
 =
 Project for WarsawJS Workshop 22 Group 1
 -
+[![Build Status](https://travis-ci.org/rsp/warsawjs-workshop-22-unit-converter.svg?branch=master)](https://travis-ci.org/rsp/warsawjs-workshop-22-unit-converter)
+[![CircleCI](https://circleci.com/gh/rsp/warsawjs-workshop-22-unit-converter.svg?style=svg)](https://circleci.com/gh/rsp/warsawjs-workshop-22-unit-converter)
 
 1. Fork the project on GitHub:
 
@@ -28,3 +30,5 @@ npm i
 5. Go to the workshop
 
 6. Have fun!
+
+---
