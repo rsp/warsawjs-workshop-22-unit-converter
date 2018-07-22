@@ -267,6 +267,12 @@ The API documentation is available on:
 
 * http://api.nbp.pl/en.html
 
+Continuous Integration
+-
+
+Configure one ofe the CI systems to run your tests automatically
+and add correct build status badges to the README.
+
 Extra tasks
 =
 
