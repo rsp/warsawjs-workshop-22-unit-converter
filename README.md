@@ -232,3 +232,74 @@ https://www.virtualbox.org/
 Vagrant
 -
 https://www.vagrantup.com/
+
+---
+
+Tasks
+=
+
+Temperature conversion
+-
+
+Temperatures need to be converted between
+degrees Celsius, Fahrenheit and Kelvin.
+
+You need to find the correct formulas and:
+
+1. Add converter functions in the `converters` directory
+
+2. Add tests in the `tests` directory
+
+Currency conversion
+-
+
+Currencies need to be converted between 
+EUR, PLN and USD
+using th eaverage NBP exchange rate as for the day 2018-01-02.
+
+You need to find a way to connect to query the NBP API for the exchange rates and:
+
+1. Add converter functions in the `converters` directory
+
+2. Add tests in the `tests` directory
+
+The API documentation is available on:
+
+* http://api.nbp.pl/en.html
+
+Extra tasks
+=
+
+For anyone who finished early there are some additional tasks
+in no particular order:
+
+Caching
+-
+
+* Make a request for every currency only once and cache the value in program memory
+
+* Make a request for every currency only once and cache the value in Redis database
+
+Dates
+-
+
+* Add functionality to select a specific date for the exchange rate
+
+Frontend
+-
+
+* Make the frontend more convenient to use
+
+* Add a simple chart for currency exchange rates using the `converter` functions
+
+* Display a table of temperatures in degrees C, F and K computed using the `converter` functions
+
+Deployment
+-
+
+* Deploy your application to Heroku
+
+* Deploy your application to a VPS on Digital Ocean ([promo link](https://m.do.co/c/64b6b577b3de) for free 10 USD)
+
+* Deploy your application to a VPS on Vultr ([promo link](https://www.vultr.com/?ref=7107329) for free 10 USD)
+
