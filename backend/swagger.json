@@ -2,12 +2,12 @@
   "swagger": "2.0",
   "info": {
     "version": "0.0.0",
-    "title": "WarsawJS Unit Converter API",
-    "description": "The project for WarsawJS Workshop #22",
+    "title": "Unit Converter API",
+    "description": "Unit Converter Project for WarsawJS Workshop 22 Group 1",
     "contact": {
-      "name": "WarsawJS",
-      "email": "contact@warsawjs.com",
-      "url": "https://warsawjs.com/"
+      "name": "Rafał Pocztarski",
+      "email": "r.pocztarski@gmail.com",
+      "url": "https://pocztarski.com/"
     },
     "license": {
       "name": "MIT License",

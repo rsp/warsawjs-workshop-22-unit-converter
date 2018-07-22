@@ -22,14 +22,11 @@ app.use(json());
 app.disable('x-powered-by');
 app.use(morgan('short', logger));
 
-logger.info('Logging...');
-
-console.log(doc.info.title);
-console.log(doc.info.description);
+logger.info(`Starting ${doc.info.title}`);
 
 app.listen(port, () => {
-  console.log(`Frontend: http://${host}:${port}/`);
-  console.log(`API Docs: http://${host}:${port}/doc`);
+  logger.info(`Frontend: http://${host}:${port}/`);
+  logger.info(`API Docs: http://${host}:${port}/doc`);
 });
 
 app.use(express.static(join(__dirname, '..', 'frontend')));
@@ -43,7 +40,7 @@ app.get('/api/temperature', (req, res) => {
   const response = {
     type: 'temperature', fromValue, fromUnit, toUnit, result,
   };
-  console.log(response);
+  logger.info(JSON.stringify(response));
   res.json(response);
 });
 
@@ -53,6 +50,6 @@ app.get('/api/currency', async (req, res) => {
   const response = {
     type: 'currency', fromValue, fromUnit, toUnit, result,
   };
-  console.log(response);
+  logger.info(JSON.stringify(response));
   res.json(response);
 });
