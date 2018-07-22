@@ -10,8 +10,8 @@ const doc = require('./swagger.json');
 
 const { logger } = require('./logger');
 
-const { temperature } = require('../lib/temperature');
-const { currency } = require('../lib/currency');
+const { temperature } = require('../converters/temperature');
+const { currency } = require('../converters/currency');
 
 const host = 'localhost';
 const port = process.env.PORT || 3333;
