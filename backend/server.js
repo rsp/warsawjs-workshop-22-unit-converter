@@ -1,17 +1,23 @@
 const express = require('express');
-const app = express();
+const { json } = require('body-parser');
 const { join } = require('path');
-
 const swagger = require('swagger-ui-express');
 const doc = require('./swagger.json');
 
 const { logger } = require('./logger');
+const morgan = require('morgan');
 
 const { temperature } = require('../lib/temperature');
 const { currency } = require('../lib/currency');
 
 const host = 'localhost';
 const port = process.env.PORT || 3333;
+
+const app = express();
+
+app.use(json());
+app.disable('x-powered-by');
+app.use(morgan('short', logger));
 
 logger.info('Logging...');
 
