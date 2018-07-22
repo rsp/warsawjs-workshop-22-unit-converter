@@ -4,12 +4,16 @@ const { join } = require('path');
 
 const swagger = require('swagger-ui-express');
 const doc = require('./swagger.json');
- 
+
+const { logger } = require('./logger');
+
 const { temperature } = require('../lib/temperature');
 const { currency } = require('../lib/currency');
 
 const host = 'localhost';
 const port = process.env.PORT || 3333;
+
+logger.info('Logging...');
 
 console.log(doc.info.title);
 console.log(doc.info.description);
