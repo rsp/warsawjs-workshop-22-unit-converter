@@ -33,13 +33,13 @@ npm i
 
 6. Have fun!
 
-More Info
--
-* [WARSZTAT.md](WARSZTAT.md) (in Polish)
+---
 
 Author
 -
 Rafał Pocztarski - https://github.com/rsp
+
+---
 
 License
 -
@@ -197,6 +197,28 @@ Tap
 * https://www.node-tap.org/
 * https://github.com/tapjs/node-tap
 * https://www.npmjs.com/package/tap
+
+---
+
+CI
+=
+
+Travis CI
+-
+* https://travis-ci.com/
+* https://travis-ci.org/
+
+CircleCI
+-
+* https://circleci.com/
+
+Codeship
+-
+* https://codeship.com/
+
+AppVeyour
+-
+* https://www.appveyor.com/
 
 ---
 
