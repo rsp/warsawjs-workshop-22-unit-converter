@@ -253,7 +253,7 @@ You need to find the correct formulas and:
 Currency conversion
 -
 
-Currencies need to be converted between 
+Currencies need to be converted between
 EUR, PLN and USD
 using th eaverage NBP exchange rate as for the day 2018-01-02.
 
@@ -302,4 +302,3 @@ Deployment
 * Deploy your application to a VPS on Digital Ocean ([promo link](https://m.do.co/c/64b6b577b3de) for free 10 USD)
 
 * Deploy your application to a VPS on Vultr ([promo link](https://www.vultr.com/?ref=7107329) for free 10 USD)
-
