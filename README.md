@@ -12,6 +12,11 @@ Special thanks to
 for greatly improving the frontend appearance!
 ([PR #1](https://github.com/rsp/warsawjs-workshop-22-unit-converter/pull/1))
 
+How To Create a Pull Request
+-
+See my tutorial:
+[How to create a Pull Request on GitHub](https://gist.github.com/rsp/8e565895df24c46ee80cfaac68d05e64)
+
 Getting Started
 -
 1. Fork the project on GitHub:
