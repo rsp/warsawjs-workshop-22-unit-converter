@@ -15,7 +15,7 @@
     "tap-cover": "tap tests/tap/*.test.js --coverage && echo TAP OK || (echo TAP ERROR; false)",
     "tape": "tape tests/tape/*.test.js && echo TAPE OK || (echo TAPE ERROR; false)",
     "mocha": "mocha tests/mocha/*.test.js && echo MOCHA OK || (echo MOCHA ERROR; false)",
-    "test": "npm run lint && npm run tape && npm run tap && npm run mocha && npm run jest && echo NPM TEST OK || (echo NPM TEST ERROR; false)"
+    "test": "npm run lint && npm run tape && npm run tap && npm run mocha && echo NPM TEST OK || (echo NPM TEST ERROR; false)"
   },
   "jest": {
     "testRegex": "\\.test\\.js$",
@@ -40,6 +40,7 @@
     "cors": "^2.8.4",
     "eslint": "^4.19.1",
     "eslint-config-airbnb": "^17.0.0",
+    "eslint-config-airbnb-base": "^13.0.0",
     "eslint-plugin-import": "^2.13.0",
     "eslint-plugin-jsx-a11y": "^6.1.1",
     "eslint-plugin-react": "^7.10.0",
