@@ -13,6 +13,6 @@ t.test('example', async (t) => {
   t.equal(await example(10), 11);
 });
 
-t.test('currency converter', (t) => {
+t.test('currency converter', async (t) => {
   t.end();
 });
