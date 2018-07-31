@@ -14,7 +14,8 @@
     "tap": "tap tests/tap/*.test.js && echo TAP OK || (echo TAP ERROR; false)",
     "tap-cover": "tap tests/tap/*.test.js --coverage && echo TAP OK || (echo TAP ERROR; false)",
     "tape": "tape tests/tape/*.test.js && echo TAPE OK || (echo TAPE ERROR; false)",
-    "test": "npm run lint && npm run tape && npm run tap && npm run jest && echo NPM TEST OK || (echo NPM TEST ERROR; false)"
+    "mocha": "mocha tests/mocha/*.test.js && echo MOCHA OK || (echo MOCHA ERROR; false)",
+    "test": "npm run lint && npm run tape && npm run tap && npm run mocha && npm run jest && echo NPM TEST OK || (echo NPM TEST ERROR; false)"
   },
   "jest": {
     "testRegex": "\\.test\\.js$",
