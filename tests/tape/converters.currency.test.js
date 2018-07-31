@@ -4,7 +4,7 @@ const test = require('tape');
 
 const mock = require('mock-require');
 
-const data = require('../jest/fixture1.json');
+const data = require('../fixtures/fixture1.json');
 
 mock('request-promise', async () => {
   return data;
@@ -23,4 +23,3 @@ test('currency converter', async (t) => {
   t.plan(1);
   t.equal(await currency(1000, 'USD', 'PLN'), 120);
 });
-
