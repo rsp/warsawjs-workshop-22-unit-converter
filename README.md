@@ -8,9 +8,17 @@ Project for WarsawJS Workshop 22 Group 1
 Special Thanks
 -
 Special thanks to
-[Ela Mościcka](https://github.com/ElaMoscicka)
+**[Ela Mościcka](https://github.com/ElaMoscicka)** 🏅🏆🌹
 for greatly improving the frontend appearance!
 ([PR #1](https://github.com/rsp/warsawjs-workshop-22-unit-converter/pull/1))
+
+### Before: 😒👎
+
+![Frontend Before](img/frontend-before.png)
+
+### After: 😊👍
+
+![Frontend After](img/frontend-after.png)
 
 How To Create a Pull Request
 -
