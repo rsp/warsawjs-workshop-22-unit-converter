@@ -328,3 +328,5 @@ Deployment
 * Deploy your application to a VPS on Digital Ocean ([promo link](https://m.do.co/c/64b6b577b3de) for free 10 USD)
 
 * Deploy your application to a VPS on Vultr ([promo link](https://www.vultr.com/?ref=7107329) for free 10 USD)
+
+* Add a domain name ([promo link](http://www.dynadot.com/?s8w657UD6gy7z6h) for free 5 USD)
