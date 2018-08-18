@@ -4,6 +4,8 @@ Project for WarsawJS Workshop 22 Group 1
 -
 [![Build Status](https://travis-ci.org/rsp/warsawjs-workshop-22-unit-converter.svg?branch=master)](https://travis-ci.org/rsp/warsawjs-workshop-22-unit-converter)
 [![CircleCI](https://circleci.com/gh/rsp/warsawjs-workshop-22-unit-converter.svg?style=svg)](https://circleci.com/gh/rsp/warsawjs-workshop-22-unit-converter)
+<br>
+[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
 Special Thanks
 -

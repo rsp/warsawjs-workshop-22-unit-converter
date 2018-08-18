@@ -1,0 +1,7 @@
+{
+  "name": "workshop-22-unit-converter",
+  "description": "WarsawJS Workshop #22 - Unit Converter",
+  "repository": "https://github.com/rsp/warsawjs-workshop-22-unit-converter",
+  "website": "https://github.com/rsp/warsawjs-workshop-22-unit-converter#readme",
+  "image": "heroku/node"
+}
