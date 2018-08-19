@@ -7,6 +7,42 @@ Project for WarsawJS Workshop 22 Group 1
 <br>
 [![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
+Updates
+-
+This project has got several updates after the workshop.
+
+Here are some releases marking the most important moments in time:
+
+https://github.com/rsp/warsawjs-workshop-22-unit-converter/releases
+
+1. `original-project` - Original project before removing code for Workshop 22
+    - this is what I created before the workshop 
+    - look at the commits to see how I built the project step by step
+    - this is a different branch with different commits than `workshop-start`
+2. `workshop-start` - Start of the Workshop 22
+    - this is what we started the workshop with
+    - it was made by removing some code from `original-project` above
+3. `workshop-changes` - Some changes made during Workshop 22
+    - those are some changes shared during the workshop life coding
+4. `style-improved` - Style improved by [Ela Mościcka](https://github.com/ElaMoscicka)
+    - the project looks much better now
+5. `update-implementation` - Update with full implementation
+    - this is an update with a full implementation of all needed features
+    - it includes caching to avoid making the same requests many times
+6. `update-tests` - Update to all tests
+    - this is an update with all needed tests
+7. `update-heroku` - Update with Heroku deployment
+    - this update adds a Deploy to Heroku button for easy deployment
+    - you can quickly deploy your version to test and share with others
+
+The HEAD of the `master` branch has all of the above major updates
+plus some additional ones.
+
+Note that the tags mark single commits
+but there may be several commits between them.
+To see e.g. the updates to the tests, run:
+- `git diff update-implementation update-tests`
+
 Special Thanks
 -
 Special thanks to
